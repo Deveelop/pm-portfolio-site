@@ -1,8 +1,32 @@
+
 export const NAV_LINKS = [
-    
-    {href: '/', key: 'about', label: 'About'},
     {href: '/', key: 'projects', label: 'Projects'},
     {href: '/', key: 'contact', label: 'Contact'},
+]
+
+export const ProjectsGallery = [
+    {
+        id: 1,
+        title: 'xxx xxx App',
+        description: 'A web app xxxxxxxxxx xxxxxxxx xxxxx xxxxxxxx',
+        image: '/img-1.png',
+        link: '#'
+    },
+    {
+     id: 2,
+     title: 'xxxxxx xxxxxx',
+     description: 'xxxxxx xxxxxx xxxxxxx xxxxxxx xxxxxx xxxx',
+     image: '/img-2.png',
+     link: '#'
+    },
+    {
+        id: 3,
+        title: 'Portfolio Website',
+        description: 'xxxxxx xxxx xxxxxx xxxxxx  xxxxxxx xxxxxxx',
+        image: '/img-1.png',
+        link: '#'
+    },
+
 ]
 
 

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
-  title: "Project Manager App",
+  title: "Portfolio App",
   description: "Developed by Victor Abuka",
 };
 

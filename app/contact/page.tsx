@@ -1,4 +1,4 @@
-
+'use client'
 
 import { useState } from "react";
 
@@ -20,11 +20,19 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
-    // Add logic to send form data to your server or email
+    const mailtoLink =
+    `mailto:evelynevee9@gmail.com?suject=Contact from ${formData.name}&body=Hi, my email is ${formData.email}. ${formData.message}`
+    window.location.href = mailtoLink;
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    })
+    
   };
 
   return (
-    <section className="bg-gray-100 text-gray-800 py-16">
+    <section className="bg-gray-100 text-gray-800 py-16 mt-10">
       <div className="container mx-auto px-6">
         {/* Page Header */}
         <div className="text-center mb-12">
@@ -106,7 +114,8 @@ export default function ContactPage() {
               </div>
             </div>
             <button
-              type="submit"
+            onClick={handleSubmit}
+             type="submit"
               className="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
             >
               Send Message

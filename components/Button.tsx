@@ -3,10 +3,11 @@ type ButtonProp = {
     title: string,
     type: 'button' | 'submit',
     icon?: string,
-    variant: string
+    variant: string,
+    onClick: () => void;
 }
 
-const Button = ({title, type, icon, variant}: ButtonProp) => {
+const Button = ({title, type, icon, variant, onClick}: ButtonProp) => {
   return (
     <button className={` cursor-pointer flexCenter gap-3 rounded-full border ${variant}`} type={type}>
         {icon && <Image src={icon} alt={title} width={24} height={24} />}

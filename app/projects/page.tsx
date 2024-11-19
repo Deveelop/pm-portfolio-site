@@ -3,7 +3,7 @@ import { ProjectsGallery } from "@/constant"
 import Image from "next/image"
 const Projects = () => {
   return (
-    <section className=" bg-gray-100 text-gray-800 py-12">
+    <section className=" min-h-screen mt-10 bg-gray-100 text-gray-800 py-12">
         <div className=" container mx-auto text-center mb-12 px-6">
             <h1 className=" text-4xl font-bold">My Projects</h1>
             <p className=" mt-4 text-lg text-gray-600">Explore some of the projects I''ve worked on. Each showcases my expertise in delivering functional and visually appealing solution</p>

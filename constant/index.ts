@@ -1,7 +1,8 @@
 
 export const NAV_LINKS = [
-    {href: '/', key: 'projects', label: 'Projects'},
-    {href: '/', key: 'contact', label: 'Contact'},
+    {href: '/home', key: 'about', label: 'About'},
+    {href: '/projects', key: 'projects', label: 'Projects'},
+    {href: '/contact', key: 'contact', label: 'Contact'},
 ]
 
 export const ProjectsGallery = [

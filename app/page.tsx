@@ -1,7 +1,7 @@
 'use client'
-import HeroPage from "@/components/HeroPage";
-import Projects from "@/components/Projects";
-import ContactPage from "@/components/ContactPage";
+import HeroPage from "@/app/home/page";
+import Projects from "@/app/projects/page";
+import ContactPage from "@/app/contact/page";
 export default function Home() {
   return (
     <>

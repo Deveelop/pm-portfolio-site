@@ -19,7 +19,6 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
     const mailtoLink =
     `mailto:evelynevee9@gmail.com?suject=Contact from ${formData.name}&body=Hi, my email is ${formData.email}. ${formData.message}`
     window.location.href = mailtoLink;
@@ -34,7 +33,7 @@ export default function ContactPage() {
   return (
     <section className="bg-gray-100 text-gray-800 py-16 mt-10">
       <div className="container mx-auto px-6">
-        {/* Page Header */}
+    
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
           <p className="text-lg text-gray-600">
@@ -42,9 +41,8 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Contact Form and Info */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">Contact Information</h2>
             <p className="text-gray-600">
@@ -72,7 +70,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Contact Form */}
+          
           <form onSubmit={handleSubmit} className="bg-white p-8 shadow-lg rounded-lg">
             <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
             <div className="space-y-4">

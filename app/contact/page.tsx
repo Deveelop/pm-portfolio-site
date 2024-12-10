@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from "react";
-
+import { AppProvider } from "@/context/AppContext";
+import Nav from "@/components/Nav";
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -31,6 +32,8 @@ export default function ContactPage() {
   };
 
   return (
+    <AppProvider>
+    <Nav/>
     <section className="bg-gray-100 text-gray-800 py-16 mt-10">
       <div className="container mx-auto px-6">
     
@@ -122,6 +125,7 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
+    </AppProvider>
   );
 }
 

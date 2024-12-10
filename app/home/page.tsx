@@ -1,10 +1,13 @@
 
 import Image from "next/image"
-
+import Nav from "@/components/Nav"
+import { AppProvider } from "@/context/AppContext";
 const HeroPage = () => {
 
   
   return (
+    <AppProvider>
+    <Nav/>
     <section className=" min-h-screen flex items-center p-2 md:px-40 bg-feature-bg bg-center bg-no-repeat">
       <div className=" flex flex-col md:flex-row items-center gap-8 max-w-5xl">
         <div>
@@ -19,6 +22,7 @@ const HeroPage = () => {
     </div>
     </div>
     </section>
+    </AppProvider>
   )
 }
 

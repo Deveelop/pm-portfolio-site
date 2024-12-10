@@ -1,8 +1,13 @@
-
+'use client'
 import { ProjectsGallery } from "@/constant"
 import Image from "next/image"
+import Nav from "@/components/Nav"
+import { AppProvider } from "@/context/AppContext";
+
 const Projects = () => {
   return (
+    <AppProvider>
+    <Nav/>
     <section className=" min-h-screen mt-10 bg-gray-100 text-gray-800 py-12">
         <div className=" container mx-auto text-center mb-12 px-6">
             <h1 className=" text-4xl font-bold">My Projects</h1>
@@ -28,6 +33,7 @@ const Projects = () => {
         </div>
 
     </section>
+    </AppProvider>
   )
 }
 
